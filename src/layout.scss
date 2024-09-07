@@ -1,0 +1,31 @@
+@import "./responsive.scss";
+
+.layout{
+    height: 100vh;
+    max-width: 1366px; // reduces the default screen size to given length
+    margin-left: auto;  // In CSS, setting margin-left: auto; and margin-right: auto; is commonly used to center an element horizontally within its container.
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+    @include lg{
+        background-color: rgb(213, 169, 153);
+        max-width: 1280px;  // to see the margin
+    }
+
+    @include md{
+        background-color: rgb(156, 181, 226);
+        max-width: 768px;
+    }
+
+    @include sm{
+        background-color: rgb(217, 155, 155);
+        max-width: 640px;
+    }
+
+
+    
+}
+
+// 3 different break points for small, medium, large screen
