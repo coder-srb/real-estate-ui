@@ -30,6 +30,9 @@ nav{
             display: flex;
             gap: 10px;
             align-items: center;
+            &:hover{
+                transform: rotatex(30deg);
+            }
 
             img{
                 width: 28px;
@@ -54,6 +57,13 @@ nav{
         justify-content: flex-end;
         background-color: #fcf5f3;
         height: 100%;
+
+        .sign{
+            &:hover{
+                transform: translate(3px, 3px);
+            }
+        }
+        
 
         @include md{
             background-color: transparent;
