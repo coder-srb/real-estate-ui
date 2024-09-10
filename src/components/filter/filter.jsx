@@ -7,7 +7,12 @@ function Filter() {
             <div className="top">
                 <div className="item">
                     <label htmlFor="city">Location</label>
-                    <input type="text" id="city" name="city" placeholder="City Location" />
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="City Location"
+                    />
                 </div>
             </div>
             <div className="bottom">
@@ -31,15 +36,32 @@ function Filter() {
                 </div>
                 <div className="item">
                     <label htmlFor="minPrice">Min Price</label>
-                    <input type="number" id="minPrice" name="minPrice" placeholder="Any" />
+                    <input
+                        type="number"
+                        id="minPrice"
+                        name="minPrice"
+                        min={0}
+                        placeholder="Any"
+                    />
                 </div>
                 <div className="item">
                     <label htmlFor="maxPrice">Max Price</label>
-                    <input type="number" id="maxPrice" name="maxPrice" placeholder="Any" />
+                    <input
+                        type="number"
+                        id="maxPrice"
+                        name="maxPrice"
+                        min={0}
+                        placeholder="Any"
+                    />
                 </div>
                 <div className="item">
                     <label htmlFor="bedRoom">BedRoom</label>
-                    <input type="text" id="bedRoom" name="bedRoom" placeholder="Any" />
+                    <input
+                        type="text"
+                        id="bedRoom"
+                        name="bedRoom"
+                        placeholder="Any"
+                    />
                 </div>
                 <button>
                     <img src="/search.png" alt="" />

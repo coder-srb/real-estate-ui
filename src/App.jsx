@@ -1,8 +1,7 @@
 import "./routes/layout/layout.scss"
-// import Navbar from "./components/navbar/Navbar.jsx"
 import HomePage from "./routes/homePage/homePage"
 
-import {    // https://reactrouter.com/en/main/start/overview
+import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -28,7 +27,7 @@ function App() {
           element: <ListPage />
         },
         {
-          path: "/:id",  // any random string value or number 
+          path: "/:id",
           element: <SinglePage />
         }
       ]
@@ -40,15 +39,6 @@ function App() {
   ]);
 
   return (
-    // <div className="layout">
-    //   <div className="navbar">
-    //     <Navbar />
-    //   </div>
-    //   <div className="content">
-    //     <HomePage />
-    //   </div>
-    // </div>                // all this now moved to the "layout.jsx"
-
     <RouterProvider router={router} />
   );
 }
